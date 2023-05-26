@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.0)
 project(python_native_boilerplate)
 
-find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+find_package(
+  Python3
+  COMPONENTS Interpreter Development
+  REQUIRED)
 include_directories(${Python3_INCLUDE_DIRS})
 
 set(BINDING_FILES src/native/bindings/example_module.c)

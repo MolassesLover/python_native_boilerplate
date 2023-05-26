@@ -2,5 +2,5 @@
 #include "../../include/native/example.h"
 
 void say_hello() {
-  printf("Hello, from C!\n");
+    printf("Hello, from C!\n");
 }
